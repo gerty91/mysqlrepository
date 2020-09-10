@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<ul th:each="prova : ${lista}">
+	
+		<li> <span th:text="${prova.id}"></span> <span th:text="${prova.nome}"></span>  </li>
+	
+	
+	</ul>
+
+<a th:href="@{/}">Vai alla home</a>
+</body>
+</html>
